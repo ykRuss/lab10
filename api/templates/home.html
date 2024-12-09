@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Endpoints</title>
+</head>
+<body>
+    <h1>API Endpoints</h1>
+
+    <h2>Get All Students (GET request)</h2>
+    <a href="http://127.0.0.1:8000/api/students/" target="_blank">Click to Get All Students</a>
+
+    <h2>Get All Ongoing Courses (GET request)</h2>
+    <a href="http://127.0.0.1:8000/api/ongoing-courses/" target="_blank">Click to Get All Ongoing Courses</a>
+
+    <h2>POST Endpoints</h2>
+
+    <h3>Display Student Details by Student ID (POST request)</h3>
+    <pre>
+    curl -X POST -H "Content-Type: application/json" -d "{\"id\": 1}" http://127.0.0.1:8000/api/student/details/
+    </pre>
+
+    <h3>Get Student Average Grade by Student ID (POST request)</h3>
+    <pre>
+    curl -X POST -H "Content-Type: application/json" -d "{\"id\": 1}" http://127.0.0.1:8000/api/student/average-grade/
+    </pre>
+
+    <h3>Get Student Ongoing Courses by Student ID (POST request)</h3>
+    <pre>
+    curl -X POST -H "Content-Type: application/json" -d "{\"id\": 1}" http://127.0.0.1:8000/api/student/ongoing-courses/
+    </pre>
+
+    <h3>Get Student Completed Courses by Student ID (POST request)</h3>
+    <pre>
+    curl -X POST -H "Content-Type: application/json" -d "{\"id\": 1}" http://127.0.0.1:8000/api/student/completed-courses/
+    </pre>
+</body>
+</html>
+
